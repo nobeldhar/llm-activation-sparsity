@@ -175,10 +175,14 @@ pip install -e .        # installs the awq package + all evaluation deps
 # Llama-3-8B at 50% enforced FFN sparsity on WikiText-2.
 # Run from the repo root (threshold JSONs are loaded by relative path);
 # --model_path takes a local model directory or a Hugging Face Hub id.
+# Note: meta-llama models are GATED on Hugging Face — accept the license on
+# the model page and `huggingface-cli login` first. Mistral-7B-v0.1 is
+# ungated if you want a friction-free start (see the swap below).
 python -m awq.entry_new --model_path meta-llama/Meta-Llama-3-8B \
     --tasks wikitext --output_path ./ppl_llama3_50.json
 # Swap --thresholds to sweep other sparsity levels or models, e.g.
-#   --thresholds ./Mistral-7B-Activation_samples/thresholds_30_percent_sparsity.json
+#   --model_path mistralai/Mistral-7B-v0.1 \
+#   --thresholds ./Mistral-7B-Activation_samples/thresholds_50_percent_sparsity.json
 ```
 
 ### Stages 1-2: recalibrate from scratch
