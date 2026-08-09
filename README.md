@@ -10,12 +10,12 @@ predict-and-prefetch inference on memory-constrained devices.
 
 **Highlights**
 
-- **First systematic study of *enforcing* activation sparsity in
-  state-of-the-art LLMs** (per the paper's contribution statement): modern
-  models abandoned ReLU and with it lost the natural sparsity that prior
-  compression work depends on — we show ~50% sparsity can be **created** in
-  these sparsity-less models (Llama-3-8B, Mistral-7B, Phi-3), with no
-  retraining, no weight changes, and PPL essentially unchanged at 30% sparsity.
+- **Enforcing activation sparsity in the post-ReLU LLM generation** — one of
+  the first studies (2024) to do so: modern models abandoned ReLU and with it
+  lost the natural sparsity that prior compression work depends on — we show
+  ~50% sparsity can be **created** in these sparsity-less models (Llama-3-8B,
+  Mistral-7B, Phi-3), with no retraining, no weight changes, and PPL
+  essentially unchanged at 30% sparsity.
 - **Why it matters:** FFN layers hold ~2/3 of LLM parameters; skipping inactive
   neurons means their weights never need to be fetched from storage — the key
   to running models that exceed device memory. The approach is **orthogonal to
@@ -57,9 +57,11 @@ activation functions silently broke an entire compression avenue.
    sparsity to exploit — but their FFN activation magnitudes concentrate
    overwhelmingly near zero. That concentration is itself a finding: ~50% of
    FFN activation values can be safely withdrawn.
-2. **First systematic enforcement of activation sparsity in modern LLMs.**
-   Per-layer magnitude thresholds *create* sparsity where none existed —
-   on pre-trained models as-is, with no retraining or fine-tuning:
+2. **Enforced activation sparsity across the modern model zoo.** Per-layer
+   magnitude thresholds *create* sparsity where none existed — on pre-trained
+   models as-is, with no retraining or fine-tuning — studied across all three
+   activation families (SwiGLU, GELU, ReLU) side by side rather than a single
+   model line:
 
 | Model (SwiGLU) | Natural sparsity | **Sparsity enabled** | PPL 0% → 50% (Fig. 8) |
 |---|---|---|---|
@@ -79,6 +81,11 @@ the gap this work fills.)*
    replaced** (Table II) — so a predictor can prefetch only the ~50% of FFN
    weights that will activate: less disk wait, higher memory hit rate, less
    compute, an extra ~50% compression from the memory system's perspective.
+
+*Concurrent 2024 work (CATS, TEAL) explored threshold-induced sparsity for
+GPU-latency speedups on SwiGLU models; this study's distinct angle is the
+cross-activation-family analysis and the pattern-predictability →
+weight-prefetching direction for memory-constrained devices.*
 
 ## The research story (six figures)
 
