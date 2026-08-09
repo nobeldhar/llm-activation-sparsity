@@ -1,0 +1,503 @@
+paragraphMain = """
+I was in high school when Facebook took off. This was in the mid-2000s, when the platform had a “wall” for public conversations, and you’d often post an uncurated album of 75 photos from a day out with your friends.
+
+As an introverted, socially awkward teenager whose in-person interactions never seemed to go right, I liked the way Facebook allowed me to portray myself as I wanted. I created a profile that showcased my favorite quotes from classic movies and the music I had on repeat. In the digital world, I was more open and candid. I got to know people that I wouldn’t talk to face-to-face—and I often used the platform to vent about my classes.
+
+My social media use seemed harmless. But I soon noticed that my attention span and mental capacity were suffering. When trying to finish school assignments, I’d check Facebook repeatedly. Each day I spent hours scrolling through its pages. It got so bad that I had to temporarily deactivate my profile ahead of my final exams to eliminate temptation.
+
+But after they ended I was back at it. I remember how, during a weeklong trip I took with my family that summer, we had no computer access (this was before smartphones), and I kept thinking, I can’t wait to get home to check Facebook. I’ll have more notifications since I’ve been away. Most notifications I got were surface-level comments or passive “likes” that didn’t really mean anything, yet it was so hard to stop checking them.
+
+I knew that I should have been reading a book—or pursuing some enriching hobby—instead. I blamed myself, thinking, This is how I’ve chosen to spend my time. But I later learned that social media platforms are addictive by design: The notifications they’re built around trigger a dopamine release in our brains, just as recreational drugs and gambling do. My Facebook addiction wasn’t my fault.
+
+As the New York Times reporter Max Fisher explains in his new book, The Chaos Machine, “Dopamine creates a positive association with whatever behaviors prompted its release, training you to repeat them….When that dopamine reward system gets hijacked, it can compel you to repeat self-destructive behaviors. To place one more bet, binge on alcohol—or spend hours on apps even when they make you unhappy.”
+
+Fisher says that the notifications themselves aren’t the problem. But they become one when social media platforms pair them with positive affirmation—those likes, follows, updates from friends, and photographs of family, pets, food, and beautiful scenery.
+
+In another new book, Digital Madness, the psychologist Nicholas Kardaras explains that the people behind Facebook and Instagram not only designed their platforms to be wildly addictive but have kept them that way even amid mounting evidence that social media overuse has a horrible effect on people’s mental and physical well-being. (The same is true for Twitter, YouTube, TikTok, and most other social media.)
+
+One study that Kardaras cites found that university students who used social media for more than three hours each school day suffered from poor sleep and poor academic performance. They also had much higher rates of depression, substance abuse, stress, and suicide. Why? One likely culprit is too much false social comparison: In online posts, photos, and videos, the grass always seems greener elsewhere.
+
+“Imagine,” Kardaras writes, “someone recently divorced and alone staring at their Facebook news feed and seeing a never-ending stream of one happy family vacation photo after another from all their friends?…We can see how the effect can exacerbate the feelings of emptiness and despair—of my life is a failure.”
+
+And children and teenagers (like high-school-era Kelsey) are uniquely vulnerable to getting hooked and suffering the consequences. In Influenced, Brian Boxer Wachler, a doctor who somewhat ironically gained his fame on TikTok and other social media platforms, digs into this issue. In fact, he coined the term “dopamine behavior balance,” or “DBB,” to refer to the level of dopamine stimulation in those seeking out the activities that provide it.
+
+Boxer Wachler contends that young people have become accustomed to turning to social media to maintain their DBB—and it’s reflected in their brain activity. In a UCLA study, MRI scans measuring blood flow to the brains of teenagers responding to Instagram likes showed that their nucleus accumbens, or reward centers, lit up with activity. Another MRI study found that adolescents were more likely to give a thumbs-up to photos that already had many likes and that seeing such photos stimulated areas of the brain that were entirely different from the areas stimulated by less popular photos.
+
+Like Kardaras, Boxer Wachler asks readers to extrapolate: “Imagine what occurs when young people—whose brains are still developing—are exposed to positive and negative social media influences for hours on end while typically unsupervised,” he writes. He notes that research has also revealed that multitasking with devices while doing homework and studying leads to lower gray-matter density in the anterior cingulate cortex, supporting evidence that using social media does indeed change the brain.
+
+Boxer Wachler goes on to say that teenagers are more susceptible than adults are to the opinions of peers and influencers because their brains are still changing. They are more likely to feel “immediacy, connectedness, and intimacy” with the people they follow, including celebrities, and lack the critical thinking skills to recognize when they’re in an entirely one-sided relationship.
+
+I did eventually manage to break my addiction to Facebook. These days it’s the last place I want to spend my free time—not just because its business is based on hooking people but also because it allowed bots to sow disinformation that unfairly influenced a pivotal presidential election.
+
+At the same time, part of my day job is to oversee HBR’s presence on social media platforms. But our aim is to create safe communities for discourse and to share information that’s truly helpful to individuals and organizations. My hope is that others on these platforms—and the companies that created and maintain them—can work toward a future where they try to enrich rather than prey upon their users.
+
+Addictions come in many forms, because humans are susceptible to many different kinds of stimuli, from drugs and alcohol to pornography and food. The modern digital world adds another: the addiction to feeds.
+
+All the online platforms are based around the business model of attention. The longer you stay, the more you scroll and the more ads you see. Advertising today is dynamic, instantly recording your likes and engagement with text, video, and images to tune algorithms that keep you entertained by giving you more of the same while adjusting the ads you get using carefully guarded psychometric profiles.
+
+When does it become too powerful? Too accurate? Too manipulative? Or even a national security threat?
+
+In the case of TikTok, that company’s algorithm is so powerful that it is not just a company secret, but classified as a state secret by the People’s Republic of China. And it’s probably running on your or your children’s digital devices right now.
+
+Peter Schweizer and Eric Eggers talk about scroll-addiction on the most recent episode of The Drill Down.
+
+TikTok, the ubiquitous app popular with teenagers, gets all the press. A new law was just passed that demands it be sold by its Chinese government-connected owner, ByteDance, or face a ban in the US. But American-owned social media platforms such as Facebook, X, YouTube, and SnapChat also profit from your scroll-addiction; they are just not as known for it.
+
+New York City is suing TikTok and Instagram for ‘addicting’ children, and the New York state legislature is considering two bills. One, the Stop Addictive Feeds Exploitation (SAFE) for Kids Act, would allow parents to opt their kids out of getting feeds curated by an algorithm. Instead, it would have them get a chronological feed of content from users they already follow. The second bill, the New York Child Data Protection Act, would prohibit all online sites from collecting, using, sharing, or selling personal data of anyone under 18 years old, unless they receive informed consent or it’s otherwise necessary. Both bills enjoy broad, bipartisan support and are likely to pass.
+
+Peter points out that big tech companies are employing expensive lobbyists to fight these and similar bills, and scoffs at the arguments they offer. Their lobbyists have argued that without the use of algorithms they would not be able to stop “hate speech” and even claim the legislation would hurt migrants.
+
+One lobbyist was even quoted as saying the legislation’s age and identity verification requirements “could have prevented people without government IDs, such as undocumented immigrants, from accessing the Internet to find legal services.”
+
+As more government action takes shape against the addictive power of scroll-addiction on young people, the tech industry has spent millions on lobbying. Schweizer points out that Amazon and Facebook combined now spend twice as much as the oil industry on lobbying lawmakers in Washington.
+
+Schweizer’s most recent book, Blood Money, notes the importance China places on TikTok and how it prevents the same addictive algorithm from influencing its own young people. He calls it a part of China’s “cognitive warfare” on America. It’s worth noting, by he way, that TikTok rejected ads he wanted to purchase to advertise the book.
+
+The addictive nature of social media algorithms was also the subject of a 2018 documentary called “The Creepy Line,” that both Schweizer and co-host Eric Eggers were involved with. They recall that one of their interview subjects, Prof. Jordan Peterson, observed that people tend to use technology for a long time before they learn to use it properly. Online addiction is a real thing.
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+paragraph95 = """
+I was in high school when Facebook took off. This was in the mid-2000s, when the platform had a “wall” for public conversations, and you’d often post an uncurated album of 75 photos from a day out with your friends.
+
+As an introverted, socially awkward teenager whose in-person interactions never seemed to go right, I liked the way Facebook allowed me to portray myself as I wanted. I created a profile that showcased my favorite quotes from classic movies and the music I had on repeat. In the digital world, I was more open and candid. I got to know people that I wouldn’t talk to face-to-face—and I often used the platform to vent about my classes.
+
+My social media use seemed harmless. But I soon noticed that my attention span and mental capacity were suffering. When trying to finish school assignments, I’d check Facebook repeatedly. Each day I spent hours scrolling through its pages. It got so bad that I had to temporarily deactivate my profile ahead of my final exams to eliminate temptation.
+
+But after they ended I was back at it. I remember how, during a weeklong trip I took with my family that summer, we had no computer access (this was before smartphones), and I kept thinking, I can’t wait to get home to check Facebook. I’ll have more notifications since I’ve been away. Most notifications I got were surface-level comments or passive “likes” that didn’t really mean anything, yet it was so hard to stop checking them.
+
+I knew that I should have been reading a book—or pursuing some enriching hobby—instead. I blamed myself, thinking, This is how I’ve chosen to spend my time. But I later learned that social media platforms are addictive by design: The notifications they’re built around trigger a dopamine release in our brains, just as recreational drugs and gambling do. My Facebook addiction wasn’t my fault.
+
+As the New York Times reporter Max Fisher explains in his new book, The Chaos Machine, “Dopamine creates a positive association with whatever behaviors prompted its release, training you to repeat them….When that dopamine reward system gets hijacked, it can compel you to repeat self-destructive behaviors. To place one more bet, binge on alcohol—or spend hours on apps even when they make you unhappy.”
+
+Fisher says that the notifications themselves aren’t the problem. But they become one when social media platforms pair them with positive affirmation—those likes, follows, updates from friends, and photographs of family, pets, food, and beautiful scenery.
+
+In another new book, Digital Madness, the psychologist Nicholas Kardaras explains that the people behind Facebook and Instagram not only designed their platforms to be wildly addictive but have kept them that way even amid mounting evidence that social media overuse has a horrible effect on people’s mental and physical well-being. (The same is true for Twitter, YouTube, TikTok, and most other social media.)
+
+One study that Kardaras cites found that university students who used social media for more than three hours each school day suffered from poor sleep and poor academic performance. They also had much higher rates of depression, substance abuse, stress, and suicide. Why? One likely culprit is too much false social comparison: In online posts, photos, and videos, the grass always seems greener elsewhere.
+
+“Imagine,” Kardaras writes, “someone recently divorced and alone staring at their Facebook news feed and seeing a never-ending stream of one happy family vacation photo after another from all their friends?…We can see how the effect can exacerbate the feelings of emptiness and despair—of my life is a failure.”
+
+And children and teenagers (like high-school-era Kelsey) are uniquely vulnerable to getting hooked and suffering the consequences. In Influenced, Brian Boxer Wachler, a doctor who somewhat ironically gained his fame on TikTok and other social media platforms, digs into this issue. In fact, he coined the term “dopamine behavior balance,” or “DBB,” to refer to the level of dopamine stimulation in those seeking out the activities that provide it.
+
+Boxer Wachler contends that young people have become accustomed to turning to social media to maintain their DBB—and it’s reflected in their brain activity. In a UCLA study, MRI scans measuring blood flow to the brains of teenagers responding to Instagram likes showed that their nucleus accumbens, or reward centers, lit up with activity. Another MRI study found that adolescents were more likely to give a thumbs-up to photos that already had many likes and that seeing such photos stimulated areas of the brain that were entirely different from the areas stimulated by less popular photos.
+
+Like Kardaras, Boxer Wachler asks readers to extrapolate: “Imagine what occurs when young people—whose brains are still developing—are exposed to positive and negative social media influences for hours on end while typically unsupervised,” he writes. He notes that research has also revealed that multitasking with devices while doing homework and studying leads to lower gray-matter density in the anterior cingulate cortex, supporting evidence that using social media does indeed change the brain.
+
+Boxer Wachler goes on to say that teenagers are more susceptible than adults are to the opinions of peers and influencers because their brains are still changing. They are more likely to feel “immediacy, connectedness, and intimacy” with the people they follow, including celebrities, and lack the critical thinking skills to recognize when they’re in an entirely one-sided relationship.
+
+I did eventually manage to break my addiction to Facebook. These days it’s the last place I want to spend my free time—not just because its business is based on hooking people but also because it allowed bots to sow disinformation that unfairly influenced a pivotal presidential election.
+
+At the same time, part of my day job is to oversee HBR’s presence on social media platforms. But our aim is to create safe communities for discourse and to share information that’s truly helpful to individuals and organizations. My hope is that others on these platforms—and the companies that created and maintain them—can work toward a future where they try to enrich rather than prey upon their users.
+
+Addictions come in many forms, because humans are susceptible to many different kinds of stimuli, from drugs and alcohol to pornography and food. The modern digital world adds another: the addiction to feeds.
+
+All the online platforms are based around the business model of attention. The longer you stay, the more you scroll and the more ads you see. Advertising today is dynamic, instantly recording your likes and engagement with text, video, and images to tune algorithms that keep you entertained by giving you more of the same while adjusting the ads you get using carefully guarded psychometric profiles.
+
+When does it become too powerful? Too accurate? Too manipulative? Or even a national security threat?
+
+In the case of TikTok, that company’s algorithm is so powerful that it is not just a company secret, but classified as a state secret by the People’s Republic of China. And it’s probably running on your or your children’s digital devices right now.
+
+Peter Schweizer and Eric Eggers talk about scroll-addiction on the most recent episode of The Drill Down.
+
+TikTok, the ubiquitous app popular with teenagers, gets all the press. A new law was just passed that demands it be sold by its Chinese government-connected owner, ByteDance, or face a ban in the US. But American-owned social media platforms such as Facebook, X, YouTube, and SnapChat also profit from your scroll-addiction; they are just not as known for it.
+
+New York City is suing TikTok and Instagram for ‘addicting’ children, and the New York state legislature is considering two bills. One, the Stop Addictive Feeds Exploitation (SAFE) for Kids Act, would allow parents to opt their kids out of getting feeds curated by an algorithm. Instead, it would have them get a chronological feed of content from users they already follow. The second bill, the New York Child Data Protection Act, would prohibit all online sites from collecting, using, sharing, or selling personal data of anyone under 18 years old, unless they receive informed consent or it’s otherwise necessary. Both bills enjoy broad, bipartisan support and are likely to pass.
+
+Peter points out that big tech companies are employing expensive lobbyists to fight these and similar bills, and scoffs at the arguments they offer. Their lobbyists have argued that without the use of algorithms they would not be able to stop “hate speech” and even claim the legislation would hurt migrants.
+
+One lobbyist was even quoted as saying the legislation’s age and identity verification requirements “could have prevented people without government IDs, such as undocumented immigrants, from accessing the Internet to find legal services.”
+
+As more government action takes shape against the addictive power of scroll-addiction on young people, the tech industry has spent millions on lobbying. Schweizer points out that Amazon and Facebook combined now spend twice as much as the oil industry on lobbying lawmakers in Washington.
+
+Schweizer’s most recent book, Blood Money, notes the importance China places on TikTok and how it prevents the same addictive algorithm from influencing its own young people. He calls it a part of China’s “cognitive warfare” on America. 
+
+Biodiversity, the variety of life on Earth, plays a crucial role in maintaining ecosystem health and stability. It ensures natural sustainability for all life forms. Diverse ecosystems are more resilient to environmental changes and provide vital services such as air and water purification, pollination of plants, and climate regulation. The loss of biodiversity can lead to the collapse of ecosystems, threatening food security, human health, and livelihoods. Conservation efforts are essential to protect the planet's rich biological diversity
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+paragraph90 = """
+I was in high school when Facebook took off. This was in the mid-2000s, when the platform had a “wall” for public conversations, and you’d often post an uncurated album of 75 photos from a day out with your friends.
+
+As an introverted, socially awkward teenager whose in-person interactions never seemed to go right, I liked the way Facebook allowed me to portray myself as I wanted. I created a profile that showcased my favorite quotes from classic movies and the music I had on repeat. In the digital world, I was more open and candid. I got to know people that I wouldn’t talk to face-to-face—and I often used the platform to vent about my classes.
+
+My social media use seemed harmless. But I soon noticed that my attention span and mental capacity were suffering. When trying to finish school assignments, I’d check Facebook repeatedly. Each day I spent hours scrolling through its pages. It got so bad that I had to temporarily deactivate my profile ahead of my final exams to eliminate temptation.
+
+But after they ended I was back at it. I remember how, during a weeklong trip I took with my family that summer, we had no computer access (this was before smartphones), and I kept thinking, I can’t wait to get home to check Facebook. I’ll have more notifications since I’ve been away. Most notifications I got were surface-level comments or passive “likes” that didn’t really mean anything, yet it was so hard to stop checking them.
+
+I knew that I should have been reading a book—or pursuing some enriching hobby—instead. I blamed myself, thinking, This is how I’ve chosen to spend my time. But I later learned that social media platforms are addictive by design: The notifications they’re built around trigger a dopamine release in our brains, just as recreational drugs and gambling do. My Facebook addiction wasn’t my fault.
+
+As the New York Times reporter Max Fisher explains in his new book, The Chaos Machine, “Dopamine creates a positive association with whatever behaviors prompted its release, training you to repeat them….When that dopamine reward system gets hijacked, it can compel you to repeat self-destructive behaviors. To place one more bet, binge on alcohol—or spend hours on apps even when they make you unhappy.”
+
+Fisher says that the notifications themselves aren’t the problem. But they become one when social media platforms pair them with positive affirmation—those likes, follows, updates from friends, and photographs of family, pets, food, and beautiful scenery.
+
+In another new book, Digital Madness, the psychologist Nicholas Kardaras explains that the people behind Facebook and Instagram not only designed their platforms to be wildly addictive but have kept them that way even amid mounting evidence that social media overuse has a horrible effect on people’s mental and physical well-being. (The same is true for Twitter, YouTube, TikTok, and most other social media.)
+
+One study that Kardaras cites found that university students who used social media for more than three hours each school day suffered from poor sleep and poor academic performance. They also had much higher rates of depression, substance abuse, stress, and suicide. Why? One likely culprit is too much false social comparison: In online posts, photos, and videos, the grass always seems greener elsewhere.
+
+“Imagine,” Kardaras writes, “someone recently divorced and alone staring at their Facebook news feed and seeing a never-ending stream of one happy family vacation photo after another from all their friends?…We can see how the effect can exacerbate the feelings of emptiness and despair—of my life is a failure.”
+
+And children and teenagers (like high-school-era Kelsey) are uniquely vulnerable to getting hooked and suffering the consequences. In Influenced, Brian Boxer Wachler, a doctor who somewhat ironically gained his fame on TikTok and other social media platforms, digs into this issue. In fact, he coined the term “dopamine behavior balance,” or “DBB,” to refer to the level of dopamine stimulation in those seeking out the activities that provide it.
+
+Boxer Wachler contends that young people have become accustomed to turning to social media to maintain their DBB—and it’s reflected in their brain activity. In a UCLA study, MRI scans measuring blood flow to the brains of teenagers responding to Instagram likes showed that their nucleus accumbens, or reward centers, lit up with activity. Another MRI study found that adolescents were more likely to give a thumbs-up to photos that already had many likes and that seeing such photos stimulated areas of the brain that were entirely different from the areas stimulated by less popular photos.
+
+Like Kardaras, Boxer Wachler asks readers to extrapolate: “Imagine what occurs when young people—whose brains are still developing—are exposed to positive and negative social media influences for hours on end while typically unsupervised,” he writes. He notes that research has also revealed that multitasking with devices while doing homework and studying leads to lower gray-matter density in the anterior cingulate cortex, supporting evidence that using social media does indeed change the brain.
+
+Boxer Wachler goes on to say that teenagers are more susceptible than adults are to the opinions of peers and influencers because their brains are still changing. They are more likely to feel “immediacy, connectedness, and intimacy” with the people they follow, including celebrities, and lack the critical thinking skills to recognize when they’re in an entirely one-sided relationship.
+
+I did eventually manage to break my addiction to Facebook. These days it’s the last place I want to spend my free time—not just because its business is based on hooking people but also because it allowed bots to sow disinformation that unfairly influenced a pivotal presidential election.
+
+At the same time, part of my day job is to oversee HBR’s presence on social media platforms. But our aim is to create safe communities for discourse and to share information that’s truly helpful to individuals and organizations. My hope is that others on these platforms—and the companies that created and maintain them—can work toward a future where they try to enrich rather than prey upon their users.
+
+Addictions come in many forms, because humans are susceptible to many different kinds of stimuli, from drugs and alcohol to pornography and food. The modern digital world adds another: the addiction to feeds.
+
+All the online platforms are based around the business model of attention. The longer you stay, the more you scroll and the more ads you see. Advertising today is dynamic, instantly recording your likes and engagement with text, video, and images to tune algorithms that keep you entertained by giving you more of the same while adjusting the ads you get using carefully guarded psychometric profiles.
+
+When does it become too powerful? Too accurate? Too manipulative? Or even a national security threat?
+
+In the case of TikTok, that company’s algorithm is so powerful that it is not just a company secret, but classified as a state secret by the People’s Republic of China. And it’s probably running on your or your children’s digital devices right now.
+
+Peter Schweizer and Eric Eggers talk about scroll-addiction on the most recent episode of The Drill Down.
+
+TikTok, the ubiquitous app popular with teenagers, gets all the press. A new law was just passed that demands it be sold by its Chinese government-connected owner, ByteDance, or face a ban in the US. But American-owned social media platforms such as Facebook, X, YouTube, and SnapChat also profit from your scroll-addiction; they are just not as known for it.
+
+New York City is suing TikTok and Instagram for ‘addicting’ children, and the New York state legislature is considering two bills. One, the Stop Addictive Feeds Exploitation (SAFE) for Kids Act, would allow parents to opt their kids out of getting feeds curated by an algorithm. Instead, it would have them get a chronological feed of content from users they already follow. The second bill, the New York Child Data Protection Act, would prohibit all online sites from collecting, using, sharing, or selling personal data of anyone under 18 years old, unless they receive informed consent or it’s otherwise necessary. Both bills enjoy broad, bipartisan support and are likely to pass.
+
+Peter points out that big tech companies are employing expensive lobbyists to fight these and similar bills, and scoffs at the arguments they offer. Their lobbyists have argued that without the use of algorithms they would not be able to stop “hate speech” and even claim the legislation would hurt migrants.
+
+One lobbyist was even quoted as saying the legislation’s age and identity verification requirements “could have prevented people without government IDs, such as undocumented immigrants, from accessing the Internet to find legal services.”
+
+Tourism is a major driver of economic growth, generating employment, and contributing to national GDPs. It stimulates local economies by creating demand for goods and services, from hospitality to transportation. Tourism also fosters cultural exchange and global understanding. However, it can have negative impacts, such as environmental degradation and cultural displacement if not managed sustainably. Balancing the economic benefits of tourism with the need to protect natural and cultural resources is essential. Sustainable tourism practices ensure that destinations can thrive economically
+
+Biodiversity, the variety of life on Earth, plays a crucial role in maintaining ecosystem health and stability. It ensures natural sustainability for all life forms. Diverse ecosystems are more resilient to environmental changes and provide vital services such as air and water purification, pollination of plants, and climate regulation. The loss of biodiversity can lead to the collapse of ecosystems, threatening food security, human health, and livelihoods. Conservation efforts are essential to protect the planet's rich biological diversity
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+paragraph85 = """
+I was in high school when Facebook took off. This was in the mid-2000s, when the platform had a “wall” for public conversations, and you’d often post an uncurated album of 75 photos from a day out with your friends.
+
+As an introverted, socially awkward teenager whose in-person interactions never seemed to go right, I liked the way Facebook allowed me to portray myself as I wanted. I created a profile that showcased my favorite quotes from classic movies and the music I had on repeat. In the digital world, I was more open and candid. I got to know people that I wouldn’t talk to face-to-face—and I often used the platform to vent about my classes.
+
+My social media use seemed harmless. But I soon noticed that my attention span and mental capacity were suffering. When trying to finish school assignments, I’d check Facebook repeatedly. Each day I spent hours scrolling through its pages. It got so bad that I had to temporarily deactivate my profile ahead of my final exams to eliminate temptation.
+
+But after they ended I was back at it. I remember how, during a weeklong trip I took with my family that summer, we had no computer access (this was before smartphones), and I kept thinking, I can’t wait to get home to check Facebook. I’ll have more notifications since I’ve been away. Most notifications I got were surface-level comments or passive “likes” that didn’t really mean anything, yet it was so hard to stop checking them.
+
+I knew that I should have been reading a book—or pursuing some enriching hobby—instead. I blamed myself, thinking, This is how I’ve chosen to spend my time. But I later learned that social media platforms are addictive by design: The notifications they’re built around trigger a dopamine release in our brains, just as recreational drugs and gambling do. My Facebook addiction wasn’t my fault.
+
+As the New York Times reporter Max Fisher explains in his new book, The Chaos Machine, “Dopamine creates a positive association with whatever behaviors prompted its release, training you to repeat them….When that dopamine reward system gets hijacked, it can compel you to repeat self-destructive behaviors. To place one more bet, binge on alcohol—or spend hours on apps even when they make you unhappy.”
+
+Fisher says that the notifications themselves aren’t the problem. But they become one when social media platforms pair them with positive affirmation—those likes, follows, updates from friends, and photographs of family, pets, food, and beautiful scenery.
+
+In another new book, Digital Madness, the psychologist Nicholas Kardaras explains that the people behind Facebook and Instagram not only designed their platforms to be wildly addictive but have kept them that way even amid mounting evidence that social media overuse has a horrible effect on people’s mental and physical well-being. (The same is true for Twitter, YouTube, TikTok, and most other social media.)
+
+One study that Kardaras cites found that university students who used social media for more than three hours each school day suffered from poor sleep and poor academic performance. They also had much higher rates of depression, substance abuse, stress, and suicide. Why? One likely culprit is too much false social comparison: In online posts, photos, and videos, the grass always seems greener elsewhere.
+
+“Imagine,” Kardaras writes, “someone recently divorced and alone staring at their Facebook news feed and seeing a never-ending stream of one happy family vacation photo after another from all their friends?…We can see how the effect can exacerbate the feelings of emptiness and despair—of my life is a failure.”
+
+And children and teenagers (like high-school-era Kelsey) are uniquely vulnerable to getting hooked and suffering the consequences. In Influenced, Brian Boxer Wachler, a doctor who somewhat ironically gained his fame on TikTok and other social media platforms, digs into this issue. In fact, he coined the term “dopamine behavior balance,” or “DBB,” to refer to the level of dopamine stimulation in those seeking out the activities that provide it.
+
+Boxer Wachler contends that young people have become accustomed to turning to social media to maintain their DBB—and it’s reflected in their brain activity. In a UCLA study, MRI scans measuring blood flow to the brains of teenagers responding to Instagram likes showed that their nucleus accumbens, or reward centers, lit up with activity. Another MRI study found that adolescents were more likely to give a thumbs-up to photos that already had many likes and that seeing such photos stimulated areas of the brain that were entirely different from the areas stimulated by less popular photos.
+
+Like Kardaras, Boxer Wachler asks readers to extrapolate: “Imagine what occurs when young people—whose brains are still developing—are exposed to positive and negative social media influences for hours on end while typically unsupervised,” he writes. He notes that research has also revealed that multitasking with devices while doing homework and studying leads to lower gray-matter density in the anterior cingulate cortex, supporting evidence that using social media does indeed change the brain.
+
+Boxer Wachler goes on to say that teenagers are more susceptible than adults are to the opinions of peers and influencers because their brains are still changing. They are more likely to feel “immediacy, connectedness, and intimacy” with the people they follow, including celebrities, and lack the critical thinking skills to recognize when they’re in an entirely one-sided relationship.
+
+I did eventually manage to break my addiction to Facebook. These days it’s the last place I want to spend my free time—not just because its business is based on hooking people but also because it allowed bots to sow disinformation that unfairly influenced a pivotal presidential election.
+
+At the same time, part of my day job is to oversee HBR’s presence on social media platforms. But our aim is to create safe communities for discourse and to share information that’s truly helpful to individuals and organizations. My hope is that others on these platforms—and the companies that created and maintain them—can work toward a future where they try to enrich rather than prey upon their users.
+
+Addictions come in many forms, because humans are susceptible to many different kinds of stimuli, from drugs and alcohol to pornography and food. The modern digital world adds another: the addiction to feeds.
+
+All the online platforms are based around the business model of attention. The longer you stay, the more you scroll and the more ads you see. Advertising today is dynamic, instantly recording your likes and engagement with text, video, and images to tune algorithms that keep you entertained by giving you more of the same while adjusting the ads you get using carefully guarded psychometric profiles.
+
+When does it become too powerful? Too accurate? Too manipulative? Or even a national security threat?
+
+In the case of TikTok, that company’s algorithm is so powerful that it is not just a company secret, but classified as a state secret by the People’s Republic of China. And it’s probably running on your or your children’s digital devices right now.
+
+Peter Schweizer and Eric Eggers talk about scroll-addiction on the most recent episode of The Drill Down.
+
+TikTok, the ubiquitous app popular with teenagers, gets all the press. A new law was just passed that demands it be sold by its Chinese government-connected owner, ByteDance, or face a ban in the US. But American-owned social media platforms such as Facebook, X, YouTube, and SnapChat also profit from your scroll-addiction; they are just not as known for it.
+
+New York City is suing TikTok and Instagram for ‘addicting’ children, and the New York state legislature is considering two bills. One, the Stop Addictive Feeds Exploitation (SAFE) for Kids Act, would allow parents to opt their kids out of getting feeds curated by an algorithm. Instead, it would have them get a chronological feed of content from users they already follow. The second bill, the New York Child Data Protection Act, would prohibit all online sites from collecting, using, sharing, or selling personal data of anyone under 18 years old, unless they receive informed consent or it’s otherwise necessary. Both bills enjoy broad, bipartisan support and are likely to pass.
+
+Urban green spaces, such as parks and gardens, offer numerous benefits to city dwellers. They provide areas for recreation, relaxation, and social interaction, enhancing the quality of life in urban environments. Green spaces improve air quality, reduce urban heat islands, and support biodiversity by providing habitats for various species. They also promote physical and mental well-being, encouraging outdoor activities and offering a respite from the stresses of urban living. Investing in urban green spaces is essential for creating healthier
+
+Tourism is a major driver of economic growth, generating employment, and contributing to national GDPs. It stimulates local economies by creating demand for goods and services, from hospitality to transportation. Tourism also fosters cultural exchange and global understanding. However, it can have negative impacts, such as environmental degradation and cultural displacement if not managed sustainably. Balancing the economic benefits of tourism with the need to protect natural and cultural resources is essential. Sustainable tourism practices ensure that destinations can thrive economically
+
+Biodiversity, the variety of life on Earth, plays a crucial role in maintaining ecosystem health and stability. It ensures natural sustainability for all life forms. Diverse ecosystems are more resilient to environmental changes and provide vital services such as air and water purification, pollination of plants, and climate regulation. The loss of biodiversity can lead to the collapse of ecosystems, threatening food security, human health, and livelihoods. Conservation efforts are essential to protect the planet's rich biological diversity
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+paragraph80 = """
+I was in high school when Facebook took off. This was in the mid-2000s, when the platform had a “wall” for public conversations, and you’d often post an uncurated album of 75 photos from a day out with your friends.
+
+As an introverted, socially awkward teenager whose in-person interactions never seemed to go right, I liked the way Facebook allowed me to portray myself as I wanted. I created a profile that showcased my favorite quotes from classic movies and the music I had on repeat. In the digital world, I was more open and candid. I got to know people that I wouldn’t talk to face-to-face—and I often used the platform to vent about my classes.
+
+My social media use seemed harmless. But I soon noticed that my attention span and mental capacity were suffering. When trying to finish school assignments, I’d check Facebook repeatedly. Each day I spent hours scrolling through its pages. It got so bad that I had to temporarily deactivate my profile ahead of my final exams to eliminate temptation.
+
+But after they ended I was back at it. I remember how, during a weeklong trip I took with my family that summer, we had no computer access (this was before smartphones), and I kept thinking, I can’t wait to get home to check Facebook. I’ll have more notifications since I’ve been away. Most notifications I got were surface-level comments or passive “likes” that didn’t really mean anything, yet it was so hard to stop checking them.
+
+I knew that I should have been reading a book—or pursuing some enriching hobby—instead. I blamed myself, thinking, This is how I’ve chosen to spend my time. But I later learned that social media platforms are addictive by design: The notifications they’re built around trigger a dopamine release in our brains, just as recreational drugs and gambling do. My Facebook addiction wasn’t my fault.
+
+As the New York Times reporter Max Fisher explains in his new book, The Chaos Machine, “Dopamine creates a positive association with whatever behaviors prompted its release, training you to repeat them….When that dopamine reward system gets hijacked, it can compel you to repeat self-destructive behaviors. To place one more bet, binge on alcohol—or spend hours on apps even when they make you unhappy.”
+
+Fisher says that the notifications themselves aren’t the problem. But they become one when social media platforms pair them with positive affirmation—those likes, follows, updates from friends, and photographs of family, pets, food, and beautiful scenery.
+
+In another new book, Digital Madness, the psychologist Nicholas Kardaras explains that the people behind Facebook and Instagram not only designed their platforms to be wildly addictive but have kept them that way even amid mounting evidence that social media overuse has a horrible effect on people’s mental and physical well-being. (The same is true for Twitter, YouTube, TikTok, and most other social media.)
+
+One study that Kardaras cites found that university students who used social media for more than three hours each school day suffered from poor sleep and poor academic performance. They also had much higher rates of depression, substance abuse, stress, and suicide. Why? One likely culprit is too much false social comparison: In online posts, photos, and videos, the grass always seems greener elsewhere.
+
+“Imagine,” Kardaras writes, “someone recently divorced and alone staring at their Facebook news feed and seeing a never-ending stream of one happy family vacation photo after another from all their friends?…We can see how the effect can exacerbate the feelings of emptiness and despair—of my life is a failure.”
+
+And children and teenagers (like high-school-era Kelsey) are uniquely vulnerable to getting hooked and suffering the consequences. In Influenced, Brian Boxer Wachler, a doctor who somewhat ironically gained his fame on TikTok and other social media platforms, digs into this issue. In fact, he coined the term “dopamine behavior balance,” or “DBB,” to refer to the level of dopamine stimulation in those seeking out the activities that provide it.
+
+Boxer Wachler contends that young people have become accustomed to turning to social media to maintain their DBB—and it’s reflected in their brain activity. In a UCLA study, MRI scans measuring blood flow to the brains of teenagers responding to Instagram likes showed that their nucleus accumbens, or reward centers, lit up with activity. Another MRI study found that adolescents were more likely to give a thumbs-up to photos that already had many likes and that seeing such photos stimulated areas of the brain that were entirely different from the areas stimulated by less popular photos.
+
+Like Kardaras, Boxer Wachler asks readers to extrapolate: “Imagine what occurs when young people—whose brains are still developing—are exposed to positive and negative social media influences for hours on end while typically unsupervised,” he writes. He notes that research has also revealed that multitasking with devices while doing homework and studying leads to lower gray-matter density in the anterior cingulate cortex, supporting evidence that using social media does indeed change the brain.
+
+Boxer Wachler goes on to say that teenagers are more susceptible than adults are to the opinions of peers and influencers because their brains are still changing. They are more likely to feel “immediacy, connectedness, and intimacy” with the people they follow, including celebrities, and lack the critical thinking skills to recognize when they’re in an entirely one-sided relationship.
+
+I did eventually manage to break my addiction to Facebook. These days it’s the last place I want to spend my free time—not just because its business is based on hooking people but also because it allowed bots to sow disinformation that unfairly influenced a pivotal presidential election.
+
+At the same time, part of my day job is to oversee HBR’s presence on social media platforms. But our aim is to create safe communities for discourse and to share information that’s truly helpful to individuals and organizations. My hope is that others on these platforms—and the companies that created and maintain them—can work toward a future where they try to enrich rather than prey upon their users.
+
+Addictions come in many forms, because humans are susceptible to many different kinds of stimuli, from drugs and alcohol to pornography and food. The modern digital world adds another: the addiction to feeds.
+
+All the online platforms are based around the business model of attention. The longer you stay, the more you scroll and the more ads you see. Advertising today is dynamic, instantly recording your likes and engagement with text, video, and images to tune algorithms that keep you entertained by giving you more of the same while adjusting the ads you get using carefully guarded psychometric profiles.
+
+When does it become too powerful? Too accurate? Too manipulative? Or even a national security threat?
+
+In the case of TikTok, that company’s algorithm is so powerful that it is not just a company secret, but classified as a state secret by the People’s Republic of China. And it’s probably running on your or your children’s digital devices right now.
+
+Peter Schweizer and Eric Eggers talk about scroll-addiction on the most recent episode of The Drill Down.
+
+TikTok, the ubiquitous app popular with teenagers, gets all the press. A new law was just passed that demands it be sold by its Chinese government-connected owner, ByteDance, or face a ban in the US. But American-owned social media platforms such as Facebook, X, YouTube, and SnapChat also profit from your scroll-addiction; they are just not as known for it.
+
+New York City is suing TikTok and Instagram for ‘addicting’ children, and the New York state legislature is considering two bills. One, the Stop Addictive Feeds Exploitation (SAFE) for Kids Act, 
+
+In our increasingly digital world, cybersecurity is more critical than ever. Protecting sensitive information from cyber threats such as hacking, phishing, and malware is essential for individuals, businesses, and governments. Cybersecurity measures safeguard personal data, financial information, and intellectual property, ensuring privacy and security. As cyberattacks become more sophisticated, investing in robust cybersecurity infrastructure and education is crucial. Awareness and proactive measures can prevent data breaches and mitigate the impact of cyber threats, fostering a safer online environment for everyone.
+
+Urban green spaces, such as parks and gardens, offer numerous benefits to city dwellers. They provide areas for recreation, relaxation, and social interaction, enhancing the quality of life in urban environments. Green spaces improve air quality, reduce urban heat islands, and support biodiversity by providing habitats for various species. They also promote physical and mental well-being, encouraging outdoor activities and offering a respite from the stresses of urban living. Investing in urban green spaces is essential for creating healthier
+
+Tourism is a major driver of economic growth, generating employment, and contributing to national GDPs. It stimulates local economies by creating demand for goods and services, from hospitality to transportation. Tourism also fosters cultural exchange and global understanding. However, it can have negative impacts, such as environmental degradation and cultural displacement if not managed sustainably. Balancing the economic benefits of tourism with the need to protect natural and cultural resources is essential. Sustainable tourism practices ensure that destinations can thrive economically
+
+Biodiversity, the variety of life on Earth, plays a crucial role in maintaining ecosystem health and stability. It ensures natural sustainability for all life forms. Diverse ecosystems are more resilient to environmental changes and provide vital services such as air and water purification, pollination of plants, and climate regulation. The loss of biodiversity can lead to the collapse of ecosystems, threatening food security, human health, and livelihoods. Conservation efforts are essential to protect the planet's rich biological diversity
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+paragraph75 = """
+I was in high school when Facebook took off. This was in the mid-2000s, when the platform had a “wall” for public conversations, and you’d often post an uncurated album of 75 photos from a day out with your friends.
+
+As an introverted, socially awkward teenager whose in-person interactions never seemed to go right, I liked the way Facebook allowed me to portray myself as I wanted. I created a profile that showcased my favorite quotes from classic movies and the music I had on repeat. In the digital world, I was more open and candid. I got to know people that I wouldn’t talk to face-to-face—and I often used the platform to vent about my classes.
+
+My social media use seemed harmless. But I soon noticed that my attention span and mental capacity were suffering. When trying to finish school assignments, I’d check Facebook repeatedly. Each day I spent hours scrolling through its pages. It got so bad that I had to temporarily deactivate my profile ahead of my final exams to eliminate temptation.
+
+But after they ended I was back at it. I remember how, during a weeklong trip I took with my family that summer, we had no computer access (this was before smartphones), and I kept thinking, I can’t wait to get home to check Facebook. I’ll have more notifications since I’ve been away. Most notifications I got were surface-level comments or passive “likes” that didn’t really mean anything, yet it was so hard to stop checking them.
+
+I knew that I should have been reading a book—or pursuing some enriching hobby—instead. I blamed myself, thinking, This is how I’ve chosen to spend my time. But I later learned that social media platforms are addictive by design: The notifications they’re built around trigger a dopamine release in our brains, just as recreational drugs and gambling do. My Facebook addiction wasn’t my fault.
+
+As the New York Times reporter Max Fisher explains in his new book, The Chaos Machine, “Dopamine creates a positive association with whatever behaviors prompted its release, training you to repeat them….When that dopamine reward system gets hijacked, it can compel you to repeat self-destructive behaviors. To place one more bet, binge on alcohol—or spend hours on apps even when they make you unhappy.”
+
+Fisher says that the notifications themselves aren’t the problem. But they become one when social media platforms pair them with positive affirmation—those likes, follows, updates from friends, and photographs of family, pets, food, and beautiful scenery.
+
+In another new book, Digital Madness, the psychologist Nicholas Kardaras explains that the people behind Facebook and Instagram not only designed their platforms to be wildly addictive but have kept them that way even amid mounting evidence that social media overuse has a horrible effect on people’s mental and physical well-being. (The same is true for Twitter, YouTube, TikTok, and most other social media.)
+
+One study that Kardaras cites found that university students who used social media for more than three hours each school day suffered from poor sleep and poor academic performance. They also had much higher rates of depression, substance abuse, stress, and suicide. Why? One likely culprit is too much false social comparison: In online posts, photos, and videos, the grass always seems greener elsewhere.
+
+“Imagine,” Kardaras writes, “someone recently divorced and alone staring at their Facebook news feed and seeing a never-ending stream of one happy family vacation photo after another from all their friends?…We can see how the effect can exacerbate the feelings of emptiness and despair—of my life is a failure.”
+
+And children and teenagers (like high-school-era Kelsey) are uniquely vulnerable to getting hooked and suffering the consequences. In Influenced, Brian Boxer Wachler, a doctor who somewhat ironically gained his fame on TikTok and other social media platforms, digs into this issue. In fact, he coined the term “dopamine behavior balance,” or “DBB,” to refer to the level of dopamine stimulation in those seeking out the activities that provide it.
+
+Boxer Wachler contends that young people have become accustomed to turning to social media to maintain their DBB—and it’s reflected in their brain activity. In a UCLA study, MRI scans measuring blood flow to the brains of teenagers responding to Instagram likes showed that their nucleus accumbens, or reward centers, lit up with activity. Another MRI study found that adolescents were more likely to give a thumbs-up to photos that already had many likes and that seeing such photos stimulated areas of the brain that were entirely different from the areas stimulated by less popular photos.
+
+Like Kardaras, Boxer Wachler asks readers to extrapolate: “Imagine what occurs when young people—whose brains are still developing—are exposed to positive and negative social media influences for hours on end while typically unsupervised,” he writes. He notes that research has also revealed that multitasking with devices while doing homework and studying leads to lower gray-matter density in the anterior cingulate cortex, supporting evidence that using social media does indeed change the brain.
+
+Boxer Wachler goes on to say that teenagers are more susceptible than adults are to the opinions of peers and influencers because their brains are still changing. They are more likely to feel “immediacy, connectedness, and intimacy” with the people they follow, including celebrities, and lack the critical thinking skills to recognize when they’re in an entirely one-sided relationship.
+
+I did eventually manage to break my addiction to Facebook. These days it’s the last place I want to spend my free time—not just because its business is based on hooking people but also because it allowed bots to sow disinformation that unfairly influenced a pivotal presidential election.
+
+At the same time, part of my day job is to oversee HBR’s presence on social media platforms. But our aim is to create safe communities for discourse and to share information that’s truly helpful to individuals and organizations. My hope is that others on these platforms—and the companies that created and maintain them—can work toward a future where they try to enrich rather than prey upon their users.
+
+Addictions come in many forms, because humans are susceptible to many different kinds of stimuli, from drugs and alcohol to pornography and food. The modern digital world adds another: the addiction to feeds.
+
+All the online platforms are based around the business model of attention. The longer you stay, the more you scroll and the more ads you see. Advertising today is dynamic, instantly recording your likes and engagement with text, video, and images to tune algorithms that keep you entertained by giving you more of the same while adjusting the ads you get using carefully guarded psychometric profiles.
+
+When does it become too powerful? Too accurate? Too manipulative? Or even a national security threat?
+
+In the case of TikTok, that company’s algorithm is so powerful that it is not just a company secret, but classified as a state secret by the People’s Republic of China. And it’s probably running on your or your children’s digital devices right now.
+
+Peter Schweizer and Eric Eggers talk about scroll-addiction on the most recent episode of The Drill Down.
+
+TikTok, the ubiquitous app popular with teenagers, gets all the press. 
+
+Electric vehicles (EVs) are becoming increasingly popular as a sustainable alternative to traditional gasoline-powered cars. Advances in battery technology have improved the range and affordability of EVs, making them more accessible to consumers. Governments are incentivizing the adoption of EVs through subsidies, tax breaks, and investments in charging infrastructure. EVs produce fewer emissions than conventional vehicles, contributing to reduced air pollution and greenhouse gas emissions. As the technology continues to evolve, electric vehicles are poised to play a significant role  
+
+In our increasingly digital world, cybersecurity is more critical than ever. Protecting sensitive information from cyber threats such as hacking, phishing, and malware is essential for individuals, businesses, and governments. Cybersecurity measures safeguard personal data, financial information, and intellectual property, ensuring privacy and security. As cyberattacks become more sophisticated, investing in robust cybersecurity infrastructure and education is crucial. Awareness and proactive measures can prevent data breaches and mitigate the impact of cyber threats, fostering a safer online environment for everyone.
+
+Urban green spaces, such as parks and gardens, offer numerous benefits to city dwellers. They provide areas for recreation, relaxation, and social interaction, enhancing the quality of life in urban environments. Green spaces improve air quality, reduce urban heat islands, and support biodiversity by providing habitats for various species. They also promote physical and mental well-being, encouraging outdoor activities and offering a respite from the stresses of urban living. Investing in urban green spaces is essential for creating healthier
+
+Tourism is a major driver of economic growth, generating employment, and contributing to national GDPs. It stimulates local economies by creating demand for goods and services, from hospitality to transportation. Tourism also fosters cultural exchange and global understanding. However, it can have negative impacts, such as environmental degradation and cultural displacement if not managed sustainably. Balancing the economic benefits of tourism with the need to protect natural and cultural resources is essential. Sustainable tourism practices ensure that destinations can thrive economically
+
+Biodiversity, the variety of life on Earth, plays a crucial role in maintaining ecosystem health and stability. It ensures natural sustainability for all life forms. Diverse ecosystems are more resilient to environmental changes and provide vital services such as air and water purification, pollination of plants, and climate regulation. The loss of biodiversity can lead to the collapse of ecosystems, threatening food security, human health, and livelihoods. Conservation efforts are essential to protect the planet's rich biological diversity
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+paragraph70 = """
+I was in high school when Facebook took off. This was in the mid-2000s, when the platform had a “wall” for public conversations, and you’d often post an uncurated album of 75 photos from a day out with your friends.
+
+As an introverted, socially awkward teenager whose in-person interactions never seemed to go right, I liked the way Facebook allowed me to portray myself as I wanted. I created a profile that showcased my favorite quotes from classic movies and the music I had on repeat. In the digital world, I was more open and candid. I got to know people that I wouldn’t talk to face-to-face—and I often used the platform to vent about my classes.
+
+My social media use seemed harmless. But I soon noticed that my attention span and mental capacity were suffering. When trying to finish school assignments, I’d check Facebook repeatedly. Each day I spent hours scrolling through its pages. It got so bad that I had to temporarily deactivate my profile ahead of my final exams to eliminate temptation.
+
+But after they ended I was back at it. I remember how, during a weeklong trip I took with my family that summer, we had no computer access (this was before smartphones), and I kept thinking, I can’t wait to get home to check Facebook. I’ll have more notifications since I’ve been away. Most notifications I got were surface-level comments or passive “likes” that didn’t really mean anything, yet it was so hard to stop checking them.
+
+I knew that I should have been reading a book—or pursuing some enriching hobby—instead. I blamed myself, thinking, This is how I’ve chosen to spend my time. But I later learned that social media platforms are addictive by design: The notifications they’re built around trigger a dopamine release in our brains, just as recreational drugs and gambling do. My Facebook addiction wasn’t my fault.
+
+As the New York Times reporter Max Fisher explains in his new book, The Chaos Machine, “Dopamine creates a positive association with whatever behaviors prompted its release, training you to repeat them….When that dopamine reward system gets hijacked, it can compel you to repeat self-destructive behaviors. To place one more bet, binge on alcohol—or spend hours on apps even when they make you unhappy.”
+
+Fisher says that the notifications themselves aren’t the problem. But they become one when social media platforms pair them with positive affirmation—those likes, follows, updates from friends, and photographs of family, pets, food, and beautiful scenery.
+
+In another new book, Digital Madness, the psychologist Nicholas Kardaras explains that the people behind Facebook and Instagram not only designed their platforms to be wildly addictive but have kept them that way even amid mounting evidence that social media overuse has a horrible effect on people’s mental and physical well-being. (The same is true for Twitter, YouTube, TikTok, and most other social media.)
+
+One study that Kardaras cites found that university students who used social media for more than three hours each school day suffered from poor sleep and poor academic performance. They also had much higher rates of depression, substance abuse, stress, and suicide. Why? One likely culprit is too much false social comparison: In online posts, photos, and videos, the grass always seems greener elsewhere.
+
+“Imagine,” Kardaras writes, “someone recently divorced and alone staring at their Facebook news feed and seeing a never-ending stream of one happy family vacation photo after another from all their friends?…We can see how the effect can exacerbate the feelings of emptiness and despair—of my life is a failure.”
+
+And children and teenagers (like high-school-era Kelsey) are uniquely vulnerable to getting hooked and suffering the consequences. In Influenced, Brian Boxer Wachler, a doctor who somewhat ironically gained his fame on TikTok and other social media platforms, digs into this issue. In fact, he coined the term “dopamine behavior balance,” or “DBB,” to refer to the level of dopamine stimulation in those seeking out the activities that provide it.
+
+Boxer Wachler contends that young people have become accustomed to turning to social media to maintain their DBB—and it’s reflected in their brain activity. In a UCLA study, MRI scans measuring blood flow to the brains of teenagers responding to Instagram likes showed that their nucleus accumbens, or reward centers, lit up with activity. Another MRI study found that adolescents were more likely to give a thumbs-up to photos that already had many likes and that seeing such photos stimulated areas of the brain that were entirely different from the areas stimulated by less popular photos.
+
+Like Kardaras, Boxer Wachler asks readers to extrapolate: “Imagine what occurs when young people—whose brains are still developing—are exposed to positive and negative social media influences for hours on end while typically unsupervised,” he writes. He notes that research has also revealed that multitasking with devices while doing homework and studying leads to lower gray-matter density in the anterior cingulate cortex, supporting evidence that using social media does indeed change the brain.
+
+Boxer Wachler goes on to say that teenagers are more susceptible than adults are to the opinions of peers and influencers because their brains are still changing. They are more likely to feel “immediacy, connectedness, and intimacy” with the people they follow, including celebrities, and lack the critical thinking skills to recognize when they’re in an entirely one-sided relationship.
+
+I did eventually manage to break my addiction to Facebook. These days it’s the last place I want to spend my free time—not just because its business is based on hooking people but also because it allowed bots to sow disinformation that unfairly influenced a pivotal presidential election.
+
+At the same time, part of my day job is to oversee HBR’s presence on social media platforms. But our aim is to create safe communities for discourse and to share information that’s truly helpful to individuals and organizations. My hope is that others on these platforms—and the companies that created and maintain them—can work toward a future where they try to enrich rather than prey upon their users.
+
+Addictions come in many forms, because humans are susceptible to many different kinds of stimuli, from drugs and alcohol to pornography and food. The modern digital world adds another: the addiction to feeds.
+
+All the online platforms are based around the business model of attention. The longer you stay, the more you scroll and the more ads you see. Advertising today is dynamic, instantly recording your likes and engagement with text, video, and images to tune algorithms that keep you entertained by giving you more of the same while adjusting the ads you get using carefully guarded psychometric profiles.
+
+When does it become too powerful? Too accurate? Too manipulative? 
+
+The COVID-19 pandemic has accelerated the shift to remote work, transforming the way businesses operate. Remote work offers flexibility, reduces commuting time, and can increase productivity and job satisfaction. It also allows companies to access a global talent pool and reduce overhead costs. However, remote work presents challenges, such as maintaining work-life balance, ensuring effective communication, and managing cybersecurity risks. As remote work becomes more prevalent, developing strategies to address these challenges and create a supportive remote work environment
+
+Electric vehicles (EVs) are becoming increasingly popular as a sustainable alternative to traditional gasoline-powered cars. Advances in battery technology have improved the range and affordability of EVs, making them more accessible to consumers. Governments are incentivizing the adoption of EVs through subsidies, tax breaks, and investments in charging infrastructure. EVs produce fewer emissions than conventional vehicles, contributing to reduced air pollution and greenhouse gas emissions. As the technology continues to evolve, electric vehicles are poised to play a significant role  
+
+In our increasingly digital world, cybersecurity is more critical than ever. Protecting sensitive information from cyber threats such as hacking, phishing, and malware is essential for individuals, businesses, and governments. Cybersecurity measures safeguard personal data, financial information, and intellectual property, ensuring privacy and security. As cyberattacks become more sophisticated, investing in robust cybersecurity infrastructure and education is crucial. Awareness and proactive measures can prevent data breaches and mitigate the impact of cyber threats, fostering a safer online environment for everyone.
+
+Urban green spaces, such as parks and gardens, offer numerous benefits to city dwellers. They provide areas for recreation, relaxation, and social interaction, enhancing the quality of life in urban environments. Green spaces improve air quality, reduce urban heat islands, and support biodiversity by providing habitats for various species. They also promote physical and mental well-being, encouraging outdoor activities and offering a respite from the stresses of urban living. Investing in urban green spaces is essential for creating healthier
+
+Tourism is a major driver of economic growth, generating employment, and contributing to national GDPs. It stimulates local economies by creating demand for goods and services, from hospitality to transportation. Tourism also fosters cultural exchange and global understanding. However, it can have negative impacts, such as environmental degradation and cultural displacement if not managed sustainably. Balancing the economic benefits of tourism with the need to protect natural and cultural resources is essential. Sustainable tourism practices ensure that destinations can thrive economically
+
+Biodiversity, the variety of life on Earth, plays a crucial role in maintaining ecosystem health and stability. It ensures natural sustainability for all life forms. Diverse ecosystems are more resilient to environmental changes and provide vital services such as air and water purification, pollination of plants, and climate regulation. The loss of biodiversity can lead to the collapse of ecosystems, threatening food security, human health, and livelihoods. Conservation efforts are essential to protect the planet's rich biological diversity
+"""
+
+
+
+
+
+
+
+
+
+
+
+

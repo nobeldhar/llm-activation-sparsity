@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this code or the calibrated thresholds, please cite the paper below."
+title: "Artifacts: Activation Sparsity Opportunities for Compressing General Large Language Models"
+authors:
+  - family-names: Dhar
+    given-names: Nobel
+    orcid: "https://orcid.org/0009-0000-5467-7082"
+repository-code: "https://github.com/nobeldhar/llm-activation-sparsity"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Activation Sparsity Opportunities for Compressing General Large Language Models"
+  authors:
+    - family-names: Dhar
+      given-names: Nobel
+    - family-names: Deng
+      given-names: Bobin
+    - family-names: Islam
+      given-names: Md Romyull
+    - family-names: Nasif
+      given-names: Kazi Fahim Ahmad
+    - family-names: Zhao
+      given-names: Liang
+    - family-names: Suo
+      given-names: Kun
+  collection-title: "IEEE International Performance, Computing, and Communications Conference (IPCCC 2024)"
+  year: 2024
+  doi: "10.1109/IPCCC59868.2024.10850382"
+  publisher:
+    name: "IEEE"
