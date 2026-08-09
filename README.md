@@ -77,11 +77,16 @@ python -m awq.entry_new --model_path meta-llama/Meta-Llama-3-8B \
 #  models — Mistral-7B / Phi-3 JSONs are included)
 ```
 
-To calibrate thresholds for a **new** model or sparsity level: run `entry_new.py`'s
-activation-collection path to dump HDF5 samples, then
+To calibrate thresholds for a **new** model or sparsity level (paper Sec. II-D
+stages 1–2):
 
 ```bash
-python threshold_determination.py --input-dir <samples_dir> --sparsity 0.50
+# Stage 1 - collect absolute FFN activations from the unmodified model (HDF5)
+python -m awq.entry_new --model_path <model> \
+    --collect-activations calib_samples --collect-windows 4
+
+# Stage 2 - percentile thresholds at the target sparsity level
+python threshold_determination.py --input-dir calib_samples --sparsity 0.50
 ```
 
 Hardware note: the paper's experiments ran on a Lambda server with four NVIDIA
@@ -90,21 +95,34 @@ GPU suffices for the 7–8B models in fp16.
 
 > Release note: the 2024 research scripts are shipped faithfully, with minimal
 > fixes for public use (threshold-JSON key lookup, optional-import guards, a CLI
-> for the calibration script, removal of experiment-scaffolding hooks). The
-> measurement logic — thresholding math and perplexity loop — is unchanged.
+> for the calibration script, removal of experiment-scaffolding hooks, and a
+> `--collect-activations` flag wiring up the previously script-internal
+> collection stage). The measurement logic — activation capture, thresholding
+> math, and perplexity loop — is unchanged.
 
 ## Reproduced results (August 2026)
 
-The shipped artifacts were re-verified end-to-end on an A100 server: the exact
-threshold JSONs in this repository, applied by `awq/entry_new.py` as documented
-in the Quick start, reproduce the paper's Fig. 8 within reading precision
-(raw outputs in [`results/reproduction_2026/`](results/reproduction_2026/)):
+The artifacts were re-verified end-to-end on an A100 server
+(raw outputs in [`results/reproduction_2026/`](results/reproduction_2026/)).
+
+**Evaluation with the shipped 2024 thresholds** (`awq/entry_new.py` exactly as
+in the Quick start) reproduces the paper's Fig. 8 within reading precision:
 
 | Model | Enforced sparsity | Reproduced WikiText-2 PPL | Paper (Fig. 8) |
 |---|---|---|---|
 | Mistral-7B | 30% | **5.418** | ≈ baseline (~5.3–5.5) |
 | Mistral-7B | 50% | **6.448** | ~6.5 |
 | Llama-3-8B | 50% | **10.675** | ~10.6 (stated "< 11") |
+
+**Full-pipeline reproduction** — all three stages rerun from scratch for
+Mistral-7B at 50%: activations freshly collected with
+`--collect-activations` (4 WikiText-2 windows), thresholds recalibrated with
+`threshold_determination.py`, then evaluated. The regenerated thresholds agree
+with the shipped May-2024 calibration to **1.6% mean / 4.5% max relative
+difference across all 96 layer-thresholds**
+([`regenerated_thresholds_50.json`](results/reproduction_2026/regenerated_thresholds_50.json)),
+and yield **PPL 6.439** vs 6.448 with the shipped thresholds — the calibrate →
+threshold → evaluate story reproduces from this repository alone.
 
 ## Key results (from the paper)
 

@@ -53,6 +53,21 @@ parser.add_argument(
     type=str,
     help="path to a calibrated per-layer thresholds JSON (see *_activation_sample*/ dirs)",
 )
+parser.add_argument(
+    "--collect-activations",
+    default=None,
+    type=str,
+    metavar="OUTDIR",
+    help="calibration mode: instead of evaluating, run WikiText-2 windows through the "
+         "UNMODIFIED model and dump absolute FFN activations to OUTDIR as HDF5 chunks "
+         "(the input format of threshold_determination.py)",
+)
+parser.add_argument(
+    "--collect-windows",
+    default=4,
+    type=int,
+    help="number of 2048-token WikiText-2 windows to collect activations from",
+)
 parser.add_argument("--num_fewshot", type=int, default=0)
 # model config
 parser.add_argument("--parallel", action="store_true", help="enable model parallelism")
@@ -906,9 +921,51 @@ def replace_and_hook_mlp(model, thresholds):
 
     return handles
 
-# Assume `model` and `thresholds` are predefined
+# Calibration stage 1 (paper Section II-D, Eqs. 1-2): run WikiText-2 windows
+# through the unmodified model, capturing |activation| of each FFN projection
+# per layer via forward hooks, and dump HDF5 chunks that
+# threshold_determination.py consumes (one chunk file per window).
+def collect_activations(model, enc, outdir, num_windows):
+    os.makedirs(outdir, exist_ok=True)
+    layers = model.model.layers
+    num_layers = len(layers)
+    categories = [c for c in ("gate_proj", "up_proj", "down_proj", "act_fn",
+                              "gate_up_proj", "fc1", "fc2")
+                  if hasattr(layers[0].mlp, c)]
+    print(f"* Collecting activations for categories {categories} over {num_windows} windows")
 
+    samples = {c: [[] for _ in range(num_layers)] for c in categories}
+    hooks = []
 
+    def make_hook(cat, idx):
+        def hook(module, inputs, output):
+            samples[cat][idx].append(
+                torch.abs(output.detach()).to(torch.float16).cpu().numpy().reshape(-1)
+            )
+        return hook
+
+    for idx, layer in enumerate(layers):
+        for cat in categories:
+            hooks.append(getattr(layer.mlp, cat).register_forward_hook(make_hook(cat, idx)))
+
+    testenc = load_dataset("wikitext", "wikitext-2-raw-v1", split="test")
+    testenc = enc("\n\n".join(testenc["text"]), return_tensors="pt")
+    seqlen = 2048
+    input_ids = testenc.input_ids.to(model.device)
+    num_windows = min(num_windows, input_ids.numel() // seqlen)
+    for i in tqdm.tqdm(range(num_windows), desc="collecting..."):
+        batch = input_ids[:, (i * seqlen):((i + 1) * seqlen)]
+        with torch.no_grad():
+            model(batch)
+        save_activation_samples_hdf5(samples, os.path.join(outdir, "activations"), i)
+        for cat in categories:  # flush per window to bound memory
+            for lst in samples[cat]:
+                lst.clear()
+
+    for h in hooks:
+        h.remove()
+    print(f"* Done. Calibrate with: python threshold_determination.py --input-dir {outdir} "
+          f"--sparsity 0.50 --categories {' '.join(categories)}")
 
 
 
@@ -924,9 +981,15 @@ def main():
 
     # a hack here to auto set model group
     model, enc = build_model_and_enc(args.model_path)
+
+    if args.collect_activations is not None:
+        # calibration mode: capture natural activations, no thresholding applied
+        collect_activations(model, enc, args.collect_activations, args.collect_windows)
+        return
+
     ####################################### APPLYRING THRESHOLD #########################################
     # Load the thresholds from the JSON file
-    
+
     print(f"* Loading sparsity thresholds from {args.thresholds}")
     with open(args.thresholds, 'r') as file:
         thresholds = json.load(file)

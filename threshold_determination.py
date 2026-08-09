@@ -23,7 +23,11 @@ import numpy as np
 
 def calculate_threshold_for_sparsity(data, sparsity_level):
     flattened_data = np.concatenate(data)
-    return np.percentile(flattened_data, sparsity_level * 100)
+    # fp16 forward passes yield occasional inf/NaN outliers; exclude them from
+    # the percentile (same treatment as the Phi-3 calibration script). Compute
+    # in float32: np.percentile on large float16 arrays overflows internally.
+    flattened_data = flattened_data[np.isfinite(flattened_data)].astype(np.float32)
+    return float(np.percentile(flattened_data, sparsity_level * 100))
 
 
 def calculate_thresholds(category, num_layers, input_paths, sparsity_level):
