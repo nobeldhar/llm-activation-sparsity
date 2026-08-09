@@ -32,14 +32,67 @@ predict-and-prefetch inference: activation patterns are highly stable — **9 of
 input samples retain a 100% layer-1 activation-pattern match even when 30% of the
 input tokens are replaced** (Table II of the paper).
 
-## Method in one paragraph
+## The story: how we found the room for extra sparsity
 
-Run WikiText-2 calibration inputs through the model with forward hooks capturing
-absolute FFN activations per layer (saved to HDF5). For a target sparsity α, flatten
-each layer's activations, take the α-th percentile of |A| as that layer's threshold
-T. At inference, replace each MLP with a thin wrapper that applies
-`x = where(|x| >= T, x, 0)` to the gate, up, and down projection outputs.
-No weights change; no retraining. (Paper Section II-D, Eqs. 1–7.)
+The paper is a process of elimination — each experiment closes one door until
+enforced activation sparsity is the only one left open. Every step below maps
+onto a stage of this repository's pipeline.
+
+**1. The FFN is the bottleneck.** In decoder-only transformers, the FFN/MLP
+layers (Gate/Up/Down projections + activation function) hold about **2/3 of
+all parameters** — they are the storage and compute bottleneck. Attention
+layers are deliberately left untouched: modifying them is far more likely to
+hurt accuracy. So compression must come from the FFN.
+
+**2. Weight sparsity is a dead end.** Weight magnitudes cluster near zero,
+but almost none are *exactly* zero — in all four models examined there is no
+exploitable natural weight sparsity (paper Insight: *"we must explore another
+sparsity type: activation sparsity"*):
+
+![Weight magnitude distributions](paper_figures/weight_distribution_histogram.png)
+
+**3. Natural activation sparsity is a ReLU-only privilege.** ReLU zeroes every
+negative input, so OPT-6.7B gets ≥92.8% sparsity in every layer for free —
+but modern LLMs abandoned ReLU. NewGELU-based Phi-2 shows under 6%, and the
+SwiGLU models (Llama-3, Mistral, Phi-3) show essentially none:
+
+![OPT natural activation sparsity](paper_figures/OPT_Activation_Sparsity.png)
+
+**4. But the magnitudes reveal the room.** Collecting the FFN activations
+(→ pipeline stage ①, `--collect-activations`) and plotting their CDFs shows
+that although SwiGLU activations are almost never exactly zero, **their
+magnitudes concentrate in tiny ranges** — e.g. ~80% of Mistral-7B's early-layer
+gate activations fall below 0.1–0.25. Values that small contribute almost
+nothing to the output. That concentration *is* the room: a small per-layer
+magnitude threshold can zero huge fractions of neurons at minimal cost (paper
+Insight: *"set small thresholds to omit fewer-contribution weights and easily
+obtain high sparsity levels"*):
+
+![Mistral-7B activation magnitude CDFs](paper_figures/Mistral-7B_cdf.png)
+
+**5. Price the trade-off.** Calibrate percentile thresholds at each target
+sparsity level (→ stage ②, `threshold_determination.py`), enforce them with
+`x = where(|x| >= T, x, 0)` on the gate/up/down outputs — no retraining, no
+weight changes — and measure WikiText-2 perplexity (→ stage ③,
+`awq/entry_new.py`). Result: **30% sparsity is essentially free, and 50% keeps
+PPL acceptable** (Llama-3 stays under 11; Mistral barely moves):
+
+![Sparsity vs perplexity](paper_figures/sparsity_vs_ppl_score.png)
+
+**6. And the patterns are predictable — sparsity becomes compression.** Which
+neurons survive the threshold is stable across similar inputs: 9 of 12 test
+samples keep a **100% layer-1 activation-pattern match even with 30% of input
+tokens replaced** (Table II; inputs shipped in
+[`perturbation_samples/`](perturbation_samples/)), and best-case samples match
+100% at every probed depth:
+
+![Activation pattern matching across layers](paper_figures/activation_matching_heatmap.png)
+
+A cheap early-layer predictor can therefore prefetch only the ~50% of FFN
+weights that will actually activate — the paper's closing insight: effective
+prediction + prefetching *"can compress 50% of LLMs from the system resources'
+perspective"*, the thread our follow-up work
+([Euro-Par 2025](https://arxiv.org/abs/2507.14179)) picks up.
 
 ## What's in this repository
 
@@ -51,7 +104,7 @@ the unrelated TinyChat demo is omitted) plus our research additions:
 | Addition | What it is |
 |---|---|
 | [`awq/entry_new.py`](awq/entry_new.py) | **The paper's evaluation script** (June 2024): loads a model, wraps its MLPs with threshold classes (`ThresholdLlamaMLP` for SwiGLU models, `ThresholdPhi3MLP` for Phi-3's fused gate_up), collects activation samples to HDF5, and runs WikiText-2 perplexity / lm-eval tasks under enforced sparsity |
-| [`threshold_determination.py`](threshold_determination.py) / [`_gpu`](threshold_determination_gpu.py) | Percentile threshold calibration from HDF5 activation samples (NumPy / CUDA `kthvalue` variants); [`new_threshold_determination.py`](new_threshold_determination.py) and [`phi-3_threshold_determinaiton.py`](phi-3_threshold_determinaiton.py) are per-model variants |
+| [`threshold_determination.py`](threshold_determination.py) / [`_gpu`](threshold_determination_gpu.py) | Percentile threshold calibration from HDF5 activation samples (NumPy / CUDA `kthvalue` variants); [`new_threshold_determination.py`](new_threshold_determination.py) and [`phi-3_threshold_determination.py`](phi-3_threshold_determination.py) are per-model variants |
 | `LLama-3-8B_activation_sample/`, `Mistral-7B-Activation_samples/`, `Phi-3_activation_samples/` | **Calibrated per-layer thresholds** for 30/35/40/45/50% sparsity — the exact JSONs behind the paper's Fig. 8 sweep (directory names preserved so `entry_new.py`'s relative paths work; the multi-hundred-GB raw HDF5 activation samples are not distributed — regenerate with `entry_new.py`) |
 | [`perturbation_samples/`](perturbation_samples/) | The 12 input samples of the paper's Table II experiment, each with its 6 perturbed variants at 95–70% similarity |
 | [`results/`](results/) | Weight-histogram counts behind Fig. 2 (`hist_counts_*.csv`), activation-pattern-match heatmaps (Figs. 9–12) |
