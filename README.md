@@ -15,7 +15,7 @@ predict-and-prefetch inference on memory-constrained devices.
   models abandoned ReLU and with it lost the natural sparsity that prior
   compression work depends on — we show ~50% sparsity can be **created** in
   these sparsity-less models (Llama-3-8B, Mistral-7B, Phi-3), with no
-  retraining, no weight changes, and zero loss up to 30%.
+  retraining, no weight changes, and PPL essentially unchanged at 30% sparsity.
 - **Why it matters:** FFN layers hold ~2/3 of LLM parameters; skipping inactive
   neurons means their weights never need to be fetched from storage — the key
   to running models that exceed device memory. The approach is **orthogonal to
@@ -63,9 +63,9 @@ activation functions silently broke an entire compression avenue.
 
 | Model (SwiGLU) | Natural sparsity | **Sparsity enabled** | PPL 0% → 50% (Fig. 8) |
 |---|---|---|---|
-| Llama-3-8B | none | **0% → 50%** | ~6.2 → ~10.6 (loss-free through 30%) |
-| Mistral-7B | none | **0% → 50%** | ~5.3 → ~6.5 (loss-free through 30%) |
-| Phi-3-3.8B | none | **0% → 50%** | ~6.5 → ~8.0 (loss-free through 30%) |
+| Llama-3-8B | none | **0% → 50%** | ~6.2 → ~10.6 |
+| Mistral-7B | none | **0% → 50%** | ~5.3 → ~6.5 |
+| Phi-3-3.8B | none | **0% → 50%** | ~6.5 → ~8.0 |
 
 *(Contrast: ReLU-era OPT-6.7B gets ≥92.8% sparsity for free and NewGELU Phi-2
 under 6% — but no state-of-the-art LLM uses ReLU anymore, which is precisely
@@ -114,8 +114,8 @@ per-layer threshold zeroes huge fractions of neurons at minimal cost:
 
 **5. Price the trade-off.** Calibrate percentile thresholds per sparsity level
 (→ stage ②), enforce `x = where(|x| >= T, x, 0)` on the gate/up/down outputs,
-and measure WikiText-2 perplexity (→ stage ③). Result: **30% sparsity is
-essentially free; 50% keeps PPL acceptable** (see
+and measure WikiText-2 perplexity (→ stage ③). Result: **at 30% sparsity the
+PPL is essentially unchanged from baseline; 50% keeps it acceptable** (see
 [Contribution at a glance](#contribution-at-a-glance)).
 
 **6. Patterns are predictable — sparsity becomes compression.** Which neurons
