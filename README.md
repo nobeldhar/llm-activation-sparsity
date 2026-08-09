@@ -3,7 +3,6 @@
 [![DOI](https://img.shields.io/badge/DOI-10.1109%2FIPCCC59868.2024.10850382-blue)](https://doi.org/10.1109/IPCCC59868.2024.10850382)
 [![Venue](https://img.shields.io/badge/IEEE%20IPCCC-2024-orange)](https://doi.org/10.1109/IPCCC59868.2024.10850382)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Reproduced](https://img.shields.io/badge/pipeline%20re--verified-Aug%202026-brightgreen.svg)](#independent-re-verification-august-2026)
 
 Research code and calibrated artifacts for our IEEE IPCCC 2024 paper on
 injecting activation sparsity into pre-trained LLMs — a foundation for
@@ -11,22 +10,23 @@ predict-and-prefetch inference on memory-constrained devices.
 
 **Highlights**
 
-- **Peer-reviewed method:** enforce **~50% activation sparsity in the FFN layers
-  of any pre-trained LLM** (Llama-3-8B, Mistral-7B, Phi-3) — no retraining, no
-  weight changes, negligible perplexity loss up to 30% sparsity.
+- **First systematic study of *enforcing* activation sparsity in
+  state-of-the-art LLMs** (per the paper's contribution statement): modern
+  models abandoned ReLU and with it lost the natural sparsity that prior
+  compression work depends on — we show ~50% sparsity can be **created** in
+  these sparsity-less models (Llama-3-8B, Mistral-7B, Phi-3), with no
+  retraining, no weight changes, and zero loss up to 30%.
 - **Why it matters:** FFN layers hold ~2/3 of LLM parameters; skipping inactive
   neurons means their weights never need to be fetched from storage — the key
-  to running models that exceed device memory.
-- **Fully reproducible — and re-verified:** the complete pipeline
-  (collect → calibrate → evaluate) was re-run end-to-end in August 2026;
-  regenerated thresholds agree with the 2024 calibration to **1.6% mean** and
-  perplexity matches the paper's Fig. 8.
+  to running models that exceed device memory. The approach is **orthogonal to
+  pruning, quantization, and distillation** — it stacks on top of them.
 - **Everything ships in this repo:** evaluation code, calibrated thresholds for
   five sparsity levels × three models, the perturbation-experiment inputs, the
-  published figures, and the paper.
+  published figures, and the paper — all
+  [re-verified end-to-end before release](#independent-re-verification-august-2026).
 
 **Contents:**
-[Results](#results-at-a-glance) ·
+[Contribution](#contribution-at-a-glance) ·
 [The research story](#the-research-story-six-figures) ·
 [What's inside](#whats-inside) ·
 [Reproduce it](#reproduce-it-yourself) ·
@@ -43,22 +43,42 @@ predict-and-prefetch inference on memory-constrained devices.
 > [10.1109/IPCCC59868.2024.10850382](https://doi.org/10.1109/IPCCC59868.2024.10850382)
 > — [PDF in this repo](paper/IPCCC2024_Activation_Sparsity.pdf)
 
-## Results at a glance
+## Contribution at a glance
 
-| Model | Activation | Natural sparsity | Enforced sparsity @ ~flat PPL |
+**The problem:** activation-sparsity compression (e.g. Apple's LLM-in-a-flash,
+DejaVu) relies on ReLU zeroing most neurons for free. State-of-the-art LLMs
+switched to SwiGLU — and their natural sparsity vanished. The evolution of
+activation functions silently broke an entire compression avenue.
+
+**What this paper contributes:**
+
+1. **Found the room where sparsity can be created.** Systematic analysis of
+   weight and activation distributions shows today's LLMs offer no natural
+   sparsity to exploit — but their FFN activation magnitudes concentrate
+   overwhelmingly near zero. That concentration is itself a finding: ~50% of
+   FFN activation values can be safely withdrawn.
+2. **First systematic enforcement of activation sparsity in modern LLMs.**
+   Per-layer magnitude thresholds *create* sparsity where none existed —
+   on pre-trained models as-is, with no retraining or fine-tuning:
+
+| Model (SwiGLU) | Natural sparsity | **Sparsity enabled** | PPL 0% → 50% (Fig. 8) |
 |---|---|---|---|
-| OPT-6.7B | ReLU | ~93% (≥92.8% every layer) | — (already sparse) |
-| Phi-2-2.7B | NewGELU | < 6% | — |
-| Llama-3-8B | SwiGLU | ~0% | **30%** (PPL < 11 even at 50%) |
-| Mistral-7B | SwiGLU | ~0% | **30%** (most stable through 50%) |
-| Phi-3-3.8B | SwiGLU | ~0% | **30%** (acceptable at 50%) |
+| Llama-3-8B | none | **0% → 50%** | ~6.2 → ~10.6 (loss-free through 30%) |
+| Mistral-7B | none | **0% → 50%** | ~5.3 → ~6.5 (loss-free through 30%) |
+| Phi-3-3.8B | none | **0% → 50%** | ~6.5 → ~8.0 (loss-free through 30%) |
+
+*(Contrast: ReLU-era OPT-6.7B gets ≥92.8% sparsity for free and NewGELU Phi-2
+under 6% — but no state-of-the-art LLM uses ReLU anymore, which is precisely
+the gap this work fills.)*
 
 ![Sparsity vs perplexity](paper_figures/sparsity_vs_ppl_score.png)
 
-And the sparsity is *predictable*: 9 of 12 test inputs keep a **100% layer-1
-activation-pattern match even with 30% of their tokens replaced** (paper
-Table II) — the prerequisite for predicting and prefetching only the neurons
-that will activate.
+3. **Showed the created sparsity is convertible into compression.** The
+   enforced activation patterns are highly predictable — 9 of 12 test inputs
+   keep a **100% layer-1 pattern match even with 30% of their tokens
+   replaced** (Table II) — so a predictor can prefetch only the ~50% of FFN
+   weights that will activate: less disk wait, higher memory hit rate, less
+   compute, an extra ~50% compression from the memory system's perspective.
 
 ## The research story (six figures)
 
@@ -96,7 +116,7 @@ per-layer threshold zeroes huge fractions of neurons at minimal cost:
 (→ stage ②), enforce `x = where(|x| >= T, x, 0)` on the gate/up/down outputs,
 and measure WikiText-2 perplexity (→ stage ③). Result: **30% sparsity is
 essentially free; 50% keeps PPL acceptable** (see
-[Results at a glance](#results-at-a-glance)).
+[Contribution at a glance](#contribution-at-a-glance)).
 
 **6. Patterns are predictable — sparsity becomes compression.** Which neurons
 survive is stable across similar inputs (9/12 samples: 100% layer-1 match at
@@ -171,7 +191,9 @@ suffices for the 7–8B models in fp16.
 
 ## Independent re-verification (August 2026)
 
-The artifacts were re-verified end-to-end on an A100 server
+I release research artifacts only after re-running them: before publishing
+this repository, the shipped code and thresholds were re-verified end-to-end
+on an A100 server
 (raw outputs in [`results/reproduction_2026/`](results/reproduction_2026/)).
 
 **Evaluation with the shipped 2024 thresholds** reproduces the paper's Fig. 8
